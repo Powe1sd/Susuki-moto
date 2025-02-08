@@ -1,0 +1,139 @@
+/* src/components/BarraNavegacion.css (or the CSS file for your navbar) */
+
+nav {
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000000;
+  padding: 10px;
+  z-index: 100;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Key for horizontal alignment */
+  justify-content: space-around; /* Distribute items evenly */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+li {
+  margin: 5px 10px; /* Adjusted margin for better spacing */
+}
+
+a {
+  color: #f9f9f9;
+  text-decoration: none;
+  padding: 8px 12px; /* Adjusted padding */
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+a:hover {
+  background-color: #880000;
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+  /* Adjust breakpoint as needed */
+  ul {
+    flex-direction: column; /* Stack navigation vertically */
+    align-items: center; /* Center the items */
+  }
+
+  li {
+    margin: 5px 0; /* Vertical margin only */
+    width: 100%; /* Make list items take full width */
+    text-align: center; /* Center the text within list items */
+  }
+
+  a {
+    padding: 8px 12px; /* Keep consistent padding */
+    display: block; /* Make <a> elements behave like block elements */
+    width: 100%;
+  }
+}
+/* *********************************************************************************** */
+/* Estilos de especificacion 2 parrafo */
+/* src/Componentes/Especificaciones.css */
+
+/* src/components/Especificaciones.css */
+
+/* Estilos generales (se aplican a todos los módulos) */
+.especificaciones {
+  font-family: sans-serif;
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid #000; /* Borde más oscuro */
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.especificaciones h2 {
+  color: #000; /* Título negro */
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.especificaciones p {
+  color: #000; /* Texto negro */
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.especificaciones img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 4px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.especificaciones ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+.especificaciones li {
+  margin-bottom: 8px;
+}
+
+.especificaciones li strong {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+/* Estilos específicos para el segundo párrafo (Módulo 2) */
+.parrafo-2 {
+  /* Usa la clase que añadiste en EspecificacionesMoto3.jsx */
+  font-style: italic;
+  color: #880000; /* Rojo oscuro */
+  background-color: #ffffcc; /* Amarillo claro */
+  padding: 10px;
+  border: 1px dashed blue;
+  text-align: center;
+  /* Nuevos estilos para hácerlo responsive */
+  font-size: 1em; /* Tamaño de letra base */
+}
+
+/* Media query para hácerlo responsive */
+@media (max-width: 768px) {
+  .especificaciones {
+    margin: 10px;
+    padding: 10px;
+  }
+  .especificaciones h2 {
+    font-size: 1.5em;
+  }
+  .especificaciones p {
+    font-size: 0.9em; /* Tamaño de letra más pequeño en pantallas pequeñas */
+  }
+  .parrafo-2 {
+    font-size: 0.9em; /* Tamaño de letra más pequeño en pantallas pequeñas */
+  }
+}
