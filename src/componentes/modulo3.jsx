@@ -14,6 +14,13 @@ function EspecificacionesMoto3() {
         buscan una experiencia de conducción auténtica y sin prisas.
       </p>
       {/* ... other content ... */}
+
+    
+
+
+
+
+
     </div>
   );
 }

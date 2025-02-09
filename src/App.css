@@ -62,13 +62,13 @@ a:hover {
 
 /* Estilos generales (se aplican a todos los módulos) */
 .especificaciones {
-  font-family: sans-serif;
+  font-family: "Times New Roman", Times, serif;
   margin: 20px;
   padding: 20px;
   border: 2px solid #000; /* Borde más oscuro */
   border-radius: 8px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-  background-color: #f9f9f9;
+  background-color: #000000;
 }
 
 .especificaciones h2 {
@@ -113,7 +113,7 @@ a:hover {
   /* Usa la clase que añadiste en EspecificacionesMoto3.jsx */
   font-style: italic;
   color: #880000; /* Rojo oscuro */
-  background-color: #ffffcc; /* Amarillo claro */
+  background-color: #000; /* Amarillo claro */
   padding: 10px;
   border: 1px dashed blue;
   text-align: center;
@@ -135,5 +135,275 @@ a:hover {
   }
   .parrafo-2 {
     font-size: 0.9em; /* Tamaño de letra más pequeño en pantallas pequeñas */
+  }
+}
+/* modulo 4************************************************************ */
+/* src/components/Especificaciones.css */
+
+/* Estilos generales (se aplican a todos los módulos) */
+.especificaciones {
+  font-family: sans-serif;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #000;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #000000;
+  /* Transición para el responsive */
+  transition: all 0.3s ease; /* Transición suave para todos los cambios */
+  font-family: "Times New Roman", Times, serif;
+}
+
+.especificaciones h2 {
+  color: white;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  text-align: center;
+  /* Transición para el responsive */
+  transition: font-size 0.3s ease; /* Transición suave para el tamaño de la letra */
+}
+
+.especificaciones p {
+  color: white;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  /* Transición para el responsive */
+  transition: font-size 0.3s ease; /* Transición suave para el tamaño de la letra */
+}
+
+.especificaciones img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 4px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.especificaciones ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+.especificaciones li {
+  margin-bottom: 8px;
+}
+
+.especificaciones li strong {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+/* Estilos específicos para el segundo párrafo (Módulo 2) */
+.parrafo-2 {
+  font-style: italic;
+  color: #880000;
+  background-color: #000000;
+  padding: 10px;
+  border: 1px dashed blue;
+  text-align: center;
+  font-size: 1em;
+  /* Transición para el responsive */
+  transition: font-size 0.3s ease; /* Transición suave para el tamaño de la letra */
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* Media query para hácerlo responsive */
+@media (max-width: 768px) {
+  /* Punto de corte para móviles */
+  .especificaciones {
+    margin: 10px;
+    padding: 10px;
+    font-size: 0.9em; /* Tamaño de letra más pequeño en general */
+  }
+
+  .especificaciones h2 {
+    font-size: 1.5em;
+  }
+
+  .especificaciones p {
+    font-size: 0.9em;
+  }
+
+  .parrafo-2 {
+    font-size: 0.9em;
+  }
+}
+/* modulo 4*************************************************** */
+/* src/components/Especificaciones.css */
+
+/* ... (Existing styles) ... */
+
+/* Estilos específicos para Moto 4 */
+.moto-4-estilo {
+  /* Note: .especificaciones is still applied too */
+  background-color: #000000; /* Example: Light white background */
+  border: 2px solid #333; /* Example: Darker border */
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* You can also target elements *within* .moto-4-estilo: */
+.moto-4-estilo h2 {
+  color: #007bff; /* Example: Blue heading */
+  font-size: 1.6em; /* Example: Slightly larger heading */
+}
+
+.moto-4-estilo p {
+  color: white; /* Example: Darker text */
+}
+
+.moto-4-estilo img {
+  border-radius: 8px; /* Example: More rounded corners */
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2); /* Example: More prominent shadow */
+}
+
+/* ... more specific styles as needed ... */
+
+/* Responsiveness (Example - Adjust as needed) */
+@media (max-width: 768px) {
+  .moto-4-estilo {
+    /* Adjust styles on smaller screens if necessary */
+    padding: 10px;
+  }
+
+  .moto-4-estilo h2 {
+    font-size: 1.3em;
+  }
+
+  /* other adjustments */
+}
+
+/* Contacto ********************************************************** */
+/* src/components/Contacto.css */
+/* src/components/Contacto.css */
+
+.contacto {
+  font-family: sans-serif;
+  margin: 20px auto; /* Centrar horizontalmente */
+  padding: 30px;
+  border: none; /* Sin borde */
+  border-radius: 12px; /* Bordes más redondeados */
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
+  max-width: 800px; /* Ancho máximo para evitar que se vea demasiado grande */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start; /* Alinea los elementos en la parte superior */
+}
+
+.contacto h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+  font-size: 1.8em;
+  width: 100%; /* El título ocupa todo el ancho */
+}
+
+.contacto .info {
+  width: 45%;
+  padding-right: 20px; /* Espacio a la derecha */
+}
+
+.contacto .detalles {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.contacto .detalles i {
+  margin-right: 15px;
+  color: #007bff;
+  font-size: 1.4em;
+}
+
+.contacto .detalles p {
+  margin: 0;
+  color: #555;
+}
+
+.contacto .detalles a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contacto .formulario {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contacto .formulario input,
+.contacto .formulario textarea {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd; /* Borde más claro */
+  border-radius: 6px;
+  box-sizing: border-box; /* Incluir padding y border en el ancho */
+}
+
+.contacto .formulario textarea {
+  height: 140px;
+}
+
+.contacto .formulario button {
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transición para el hover */
+}
+
+.contacto .formulario button:hover {
+  background-color: #0056b3; /* Color más oscuro al pasar el mouse */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .contacto {
+    flex-direction: column; /* Stack vertically */
+    align-items: center; /* Center horizontally */
+    padding: 20px;
+  }
+
+  .contacto .info,
+  .contacto .formulario {
+    width: 90%;
+    margin-bottom: 20px;
+    padding: 0; /* Quitar padding en móvil */
+  }
+
+  .contacto .detalles {
+    flex-direction: column; /* Icono arriba, texto abajo */
+    align-items: flex-start; /* Alinea el texto a la izquierda */
+  }
+
+  .contacto .detalles i {
+    margin-right: 0; /* Quita el margen a la derecha del icono */
+    margin-bottom: 5px; /* Margen inferior para el icono */
+  }
+}
+/* boton whataspp ****************************** */
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: block;
+  z-index: 1000; /* Ensure it's above other elements */
+}
+
+.whatsapp-button i {
+  font-size: 3rem;
+  color: green;
+}
+
+/* Media query to adjust on smaller screens if necessary */
+@media (max-width: 768px) {
+  .whatsapp-button {
+    bottom: 10px; /* Adjust as needed */
+    right: 10px;
   }
 }
