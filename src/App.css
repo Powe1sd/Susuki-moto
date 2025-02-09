@@ -74,8 +74,8 @@ a:hover {
   border: 2px solid #000;
   border-radius: 8px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-  background-color: #000000;
-  color: white; /* Texto blanco para el fondo negro */
+  background-color: white;
+  color: black; /* Texto blanco para el fondo negro */
   transition: all 0.3s ease;
 }
 .especificaciones h2 {
@@ -146,8 +146,8 @@ a:hover {
 
 /* Estilos específicos para Moto 4 */
 .moto-4-estilo {
-  background-color: #000000;
-  border: 2px solid #333;
+  background-color: white;
+  border: 2px solid black;
   font-family: "Times New Roman", Times, serif;
 }
 .moto-4-estilo h2 {
@@ -155,7 +155,7 @@ a:hover {
   font-size: 1.6em;
 }
 .moto-4-estilo p {
-  color: white;
+  color: black;
 }
 .moto-4-estilo img {
   border-radius: 8px;

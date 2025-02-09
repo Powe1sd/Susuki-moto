@@ -25,11 +25,7 @@ function Contacto() {
           <i className="fab fa-facebook"></i>{" "}
           {/* Example for social media icon */}
           <p>
-            <a
-              href="https://www.facebook.com/yourpage"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="" target="_blank" rel="noopener noreferrer">
               Facebook
             </a>
           </p>
