@@ -9,7 +9,7 @@ import Contacto from "./componentes/contacto";
 import Modulo5 from "./componentes/modulo5";
 import Modulo6 from "./componentes/modulo6";
 import Modulo7 from "./componentes/modulo7";
-
+import FormularioSuzuki from "./componentes/modulo8";
 function App() {
   return (
     <div className="App">
@@ -20,6 +20,7 @@ function App() {
       <Modulo5 />
       <Modulo6 />
       <Modulo7 />
+      <FormularioSuzuki />
       {/* ultimo paso */}
       <Contacto />
     </div>

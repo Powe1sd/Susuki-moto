@@ -457,3 +457,77 @@ a:hover {
     width: 90%; /* Make items wider on small screens */
   }
 }
+
+/* Modulo 8 */
+/* Estilos generales del formulario */
+.formulario-suzuki {
+  font-family: sans-serif;
+  width: 80%; /* Ajusta el ancho del formulario según tus necesidades */
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-suzuki h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333; /* Color del título */
+}
+
+/* Estilos para los campos del formulario */
+.campo {
+  margin-bottom: 20px;
+}
+
+.campo label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Estilos para los checkboxes */
+.campo-checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.campo-checkbox input {
+  margin-right: 10px;
+}
+
+.campo-checkbox label {
+  font-weight: normal;
+}
+
+.campo-checkbox a {
+  color: #007bff; /* Color de los enlaces */
+  text-decoration: none;
+}
+
+/* Estilos para el botón de enviar */
+.formulario-suzuki button[type="submit"] {
+  background-color: #007bff; /* Color azul para el botón */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.formulario-suzuki button[type="submit"]:hover {
+  background-color: #0056b3; /* Color azul más oscuro al pasar el mouse */
+}
