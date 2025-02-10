@@ -17,6 +17,7 @@ body {
 
 /* Barra de Navegación */
 /* Contenedor del nav */
+/* Contenedor del nav */
 .nav-container {
   position: fixed;
   top: 0;
@@ -27,16 +28,16 @@ body {
   z-index: 100;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   display: flex;
-  justify-content: space-between;
+  flex-direction: column; /* Asegura que los botones se apilen */
   align-items: center;
 }
 
 /* Botón hamburguesa */
 .menu-toggle {
   display: none;
-  font-size: 24px;
+  font-size: 17px;
   cursor: pointer;
-  color: white;
+  color: red;
 }
 
 /* Estilos de la lista de navegación */
@@ -45,18 +46,21 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .nav-links li {
-  margin: 8px 15px;
+  flex-grow: 1; /* Hace que todos los botones ocupen el mismo ancho */
+  text-align: center;
 }
 
 .nav-links a {
+  display: block;
   color: white;
   text-decoration: none;
-  padding: 10px 15px;
+  padding: 12px 0; /* Espaciado interno */
+  width: 100%;
   border-radius: 8px;
   border: 1px solid white;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -64,7 +68,7 @@ body {
 
 .nav-links a:hover {
   background-color: #222;
-  color: #fff;
+  color: yellow;
 }
 
 /* Estilos para móviles */
