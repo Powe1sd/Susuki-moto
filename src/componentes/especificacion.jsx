@@ -1,4 +1,5 @@
 import moto1 from "../img/moto1.jpeg"; // Ajusta la ruta si es necesario
+
 import React from "react";
 
 function ComponentEspecificaciones() {

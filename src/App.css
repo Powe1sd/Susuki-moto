@@ -14,7 +14,7 @@ body {
   }
 }
 
-/* Barra de Navegación */
+/* Barra de Navegación *************************************************/
 nav {
   width: 100%;
   background-color: #000000;
@@ -66,7 +66,7 @@ a:hover {
   }
 }
 
-/* Estilos de Especificaciones (Módulos) */
+/* Estilos de Especificaciones (Módulos 1) ************************************************/
 .especificaciones {
   font-family: "Times New Roman", Times, serif;
   margin: 20px;
@@ -110,7 +110,7 @@ a:hover {
   margin-right: 5px;
 }
 
-/* Estilos específicos para el segundo párrafo (Módulo 2) */
+/* Estilos específicos para el segundo párrafo (Módulo 2) ****************************************************/
 .parrafo-2 {
   font-style: italic;
   color: #880000;
@@ -144,7 +144,7 @@ a:hover {
   }
 }
 
-/* Estilos específicos para Moto 4 */
+/* Estilos específicos para Moto 4*************************************************+ */
 .moto-4-estilo {
   background-color: white;
   border: 2px solid black;
@@ -174,7 +174,7 @@ a:hover {
 }
 
 /* Contacto */
-/* src/components/Contacto.css */
+/* src/components/Contacto.css*******************************************************++ */
 .contacto {
   font-family: sans-serif;
   margin: 20px auto; /* Centrar horizontalmente */
@@ -291,7 +291,7 @@ a:hover {
   }
 }
 
-/* Botón de WhatsApp ***************************+/
+/* Botón de WhatsApp *************************************************************************+/
 
 /* Botón de WhatsApp */
 /* Botón de WhatsApp */
@@ -329,4 +329,68 @@ a:hover {
   }
 }
 
-/* Media Query for Responsiveness - WhatsApp Button */
+/* modulo 6****************************************************************** */
+.especificaciones img {
+  /* ... other image styles ... */
+  width: 190%; /* Adjust this value to control the width */
+  /* If you want to set a maximum width: */
+  max-width: 700px; /* Adjust this value as needed */
+}
+
+.modulo6 {
+  /* Estilos específicos para este módulo */
+  text-align: center;
+}
+
+.modulo6 .carousel .slide img {
+  max-height: 250px;
+  /*Alturamáximadelasimágenes(reducida)*/
+  object-fit: cover;
+  margin: auto;
+  border-radius: 18px;
+  /*Bordesligeramenteredondeados*/
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  -ms-border-radius: 18px;
+  -o-border-radius: 18px;
+}
+
+.modulo6 .especificaciones-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajustado */
+  gap: 25px; /* Espacio reducido entre elementos de la cuadrícula */
+}
+
+.modulo6 .especificacion {
+  border: 2px solid #ddd;
+  /*Bordemássutil*/padding: 15px;
+  /*Paddingreducido*/border-radius: 8px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.modulo6 .especificacion:hover {
+  transform: translateY(-2px); /* Leve elevación al pasar el ratón */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
+}
+
+.modulo6 .especificacion i {
+  font-size: 2.5em; /* Tamaño de icono reducido */
+  margin-bottom: 8px;
+  color: #007bff; /* Color azul para los iconos */
+}
+
+.modulo6 .especificacion h3 {
+  margin-bottom: 5px;
+  font-size: 1.1em;
+}
+
+.modulo6 .especificacion p {
+  font-size: 1em;
+  color: #555; /* Color de texto más oscuro */
+}
