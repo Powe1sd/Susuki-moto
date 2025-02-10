@@ -8,6 +8,7 @@ import EspecificacionesMoto4 from "./componentes/modulo4";
 import Contacto from "./componentes/contacto";
 import Modulo5 from "./componentes/modulo5";
 import Modulo6 from "./componentes/modulo6";
+import Modulo7 from "./componentes/modulo7";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <EspecificacionesMoto4 />
       <Modulo5 />
       <Modulo6 />
+      <Modulo7 />
       {/* ultimo paso */}
       <Contacto />
     </div>
