@@ -1,5 +1,7 @@
 // src/components/modulo7.jsx
 import React from 'react';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 function Modulo7() {
   return (
