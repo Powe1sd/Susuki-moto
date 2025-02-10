@@ -3,7 +3,7 @@
 
 body {
   overflow-x: hidden;
-  background-color: black;
+  background-color: whitesmoke;
 }
 
 @media (max-width: 768px) {
