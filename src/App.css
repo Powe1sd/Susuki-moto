@@ -14,10 +14,10 @@ body {
   }
 }
 
-/* Barra de Navegación *************************************************/
+/* Barra de Navegación */
 nav {
   width: 100%;
-  background-color: black; /* White background */
+  background-color: black;
   padding: 15px;
   z-index: 100;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -29,7 +29,7 @@ ul {
   padding: 0;
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* This is key for responsiveness */
 }
 
 li {
@@ -38,20 +38,37 @@ li {
 
 a {
   color: white;
-  /*Blacktextcolor*/
   text-decoration: none;
   padding: 10px 15px;
   border-radius: 8px;
   border: 1px solid white;
-  /*Blackborder*/
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 a:hover {
-  background-color: #000; /* Black background on hover */
-  color: #fff; /* White text color on hover */
+  background-color: #000;
+  color: #fff;
 }
 
+/* Media Query for Responsiveness - Navigation */
+@media (max-width: 768px) {
+  /* Adjust the breakpoint as needed */
+  ul {
+    flex-direction: column; /* Stack the items vertically */
+    align-items: center; /* Center the items horizontally */
+  }
+
+  li {
+    margin: 5px 0; /* Adjust vertical margin */
+    width: 100%; /* Make each item take full width */
+    text-align: center; /* Center the text */
+  }
+
+  a {
+    display: block; /* Make the links block elements */
+    width: 100%; /* Make each link take full width */
+  }
+}
 /* ... (Media query for responsiveness - No changes needed here) ... */
 /* Estilos de Especificaciones (Módulos 1) ************************************************/
 .especificaciones {
@@ -326,7 +343,6 @@ a:hover {
 
 /* Modulo 6 ******************************************************************** */
 .modulo6 {
-  
   text-align: center;
 }
 
