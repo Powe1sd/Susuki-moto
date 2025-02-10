@@ -53,23 +53,28 @@ a:hover {
 
 /* Media Query for Responsiveness - Navigation */
 @media (max-width: 768px) {
-  /* Adjust the breakpoint as needed */
+  nav {
+    width: 77%;
+    margin: 0 auto; /* Centrar la barra de navegación */
+  }
+
   ul {
-    flex-direction: column; /* Stack the items vertically */
-    align-items: center; /* Center the items horizontally */
+    flex-direction: column; /* Apilar elementos verticalmente */
+    align-items: center; /* Centrar elementos */
   }
 
   li {
-    margin: 5px 0; /* Adjust vertical margin */
-    width: 100%; /* Make each item take full width */
-    text-align: center; /* Center the text */
+    margin: 5px 0; /* Espaciado entre elementos */
+    width: 100%; /* Cada elemento toma el ancho completo */
+    text-align: center; /* Centrar el texto */
   }
 
   a {
-    display: block; /* Make the links block elements */
-    width: 100%; /* Make each link take full width */
+    display: block; /* Hacer los enlaces de ancho completo */
+    width: 100%;
   }
 }
+
 /* ... (Media query for responsiveness - No changes needed here) ... */
 /* Estilos de Especificaciones (Módulos 1) ************************************************/
 .especificaciones {
