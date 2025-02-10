@@ -316,16 +316,17 @@ a:hover {
   }
 }
 
-/* modulo 6****************************************************************** */
+/* modulo 5****************************************************************** */
 .especificaciones img {
   /* ... other image styles ... */
-  width: 190%; /* Adjust this value to control the width */
+  width: 100%; /* Adjust this value to control the width */
   /* If you want to set a maximum width: */
   max-width: 700px; /* Adjust this value as needed */
 }
 
+/* Modulo 6 ******************************************************************** */
 .modulo6 {
-  /* Estilos específicos para este módulo */
+  
   text-align: center;
 }
 
