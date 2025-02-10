@@ -16,28 +16,44 @@ body {
 }
 
 /* Barra de Navegación */
-nav {
+/* Contenedor del nav */
+.nav-container {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   background-color: black;
   padding: 15px;
   z-index: 100;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-ul {
+/* Botón hamburguesa */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Estilos de la lista de navegación */
+.nav-links {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap; /* This is key for responsiveness */
+  flex-wrap: wrap;
 }
 
-li {
+.nav-links li {
   margin: 8px 15px;
 }
 
-a {
+.nav-links a {
   color: white;
   text-decoration: none;
   padding: 10px 15px;
@@ -46,31 +62,40 @@ a {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-a:hover {
-  background-color: #000;
+.nav-links a:hover {
+  background-color: #222;
   color: #fff;
 }
 
-/* Media Query for Responsiveness - Navigation */
+/* Estilos para móviles */
 @media (max-width: 768px) {
-  nav {
-    width: 77%;
-    margin: 0 auto; /* Centrar la barra de navegación */
+  .menu-toggle {
+    display: block;
   }
 
-  ul {
-    flex-direction: column; /* Apilar elementos verticalmente */
-    align-items: center; /* Centrar elementos */
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    flex-direction: column;
+    align-items: center;
+    display: none;
   }
 
-  li {
-    margin: 5px 0; /* Espaciado entre elementos */
-    width: 100%; /* Cada elemento toma el ancho completo */
-    text-align: center; /* Centrar el texto */
+  .nav-links.open {
+    display: flex;
   }
 
-  a {
-    display: block; /* Hacer los enlaces de ancho completo */
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .nav-links a {
+    display: block;
     width: 100%;
   }
 }
@@ -123,7 +148,7 @@ a:hover {
 /* Estilos específicos para el segundo párrafo (Módulo 2) ****************************************************/
 .parrafo-2 {
   font-style: italic;
-  color: #880000;
+  color: white;
   background-color: #000000;
   padding: 10px;
   border: 1px dashed blue;
