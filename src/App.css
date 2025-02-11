@@ -18,60 +18,69 @@ body {
 /* Barra de Navegación */
 /* Contenedor del nav */
 /* Contenedor del nav */
+/* Contenedor de la barra de navegación */
 .nav-container {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: black;
-  padding: 15px;
+  background: linear-gradient(90deg, #111, #222); /* Degradado elegante */
+  padding: 10px 15px;
   z-index: 100;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   display: flex;
-  flex-direction: column; /* Asegura que los botones se apilen */
+  justify-content: space-between;
   align-items: center;
 }
 
-/* Botón hamburguesa */
+/* Botón de menú hamburguesa */
 .menu-toggle {
   display: none;
-  font-size: 17px;
+  font-size: 20px;
   cursor: pointer;
-  color: red;
+  color: #f5b400; /* Amarillo elegante */
+  transition: transform 0.3s ease;
 }
 
-/* Estilos de la lista de navegación */
+.menu-toggle:hover {
+  transform: scale(1.1);
+}
+
+/* Lista de navegación */
 .nav-links {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
-  flex-wrap: wrap;
-  width: 100%;
+  gap: 20px;
 }
 
 .nav-links li {
-  flex-grow: 1; /* Hace que todos los botones ocupen el mismo ancho */
   text-align: center;
 }
 
 .nav-links a {
   display: block;
   color: white;
+  font-weight: bold;
+  text-transform: uppercase;
   text-decoration: none;
-  padding: 2px 0; /* Espaciado interno */
-  width: 100%;
+  padding: 7px 9px;
   border-radius: 8px;
-  border: 1px solid white;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
 }
 
 .nav-links a:hover {
-  background-color: #222;
-  color: yellow;
+  background-color: #f5b400;
+  color: #222;
+  box-shadow: 0 3px 8px rgba(255, 193, 7, 0.5);
 }
 
-/* Estilos para móviles */
+/* Estilos responsivos */
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
@@ -79,38 +88,38 @@ body {
 
   .nav-links {
     position: absolute;
-    top: 60px;
+    top: 40px;
     left: 0;
     width: 100%;
-    background-color: black;
+    background: #111;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
     display: none;
+    padding: 10px 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   }
 
   .nav-links.open {
     display: flex;
-  }
-
-  .nav-links li {
-    width: 100%;
-    text-align: center;
-    padding: 10px 0;
+    animation: fadeIn 0.3s ease-in-out;
   }
 
   .nav-links a {
-    display: block;
     width: 100%;
+    padding: 9px;
   }
 }
 
-@media (max-width: 768px) {
-  .nav-container {
-    padding: 10px; /* Reduce el tamaño */
+/* Animación de aparición */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
   }
-
-  .section {
-    padding-top: 70px; /* Ajusta según el nuevo tamaño */
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -118,46 +127,87 @@ body {
 /* ... (Media query for responsiveness - No changes needed here) ... */
 /* Estilos de Especificaciones (Módulos 1) ************************************************/
 .especificaciones {
-  font-family: "Times New Roman", Times, serif;
-  margin: 20px;
-  padding: 20px;
-  border: 2px solid #000;
-  border-radius: 8px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-  background-color: white;
-  color: black; /* Texto blanco para el fondo negro */
-  transition: all 0.3s ease;
+  font-family: "Poppins", sans-serif;
+  margin: 30px auto;
+  padding: 25px;
+  max-width: 800px;
+  background: linear-gradient(135deg, #000000, #333);
+  color: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.especificaciones:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(255, 193, 7, 0.3);
+}
+
 .especificaciones h2 {
-  font-size: 1.8em;
-  margin-bottom: 10px;
+  font-size: 2em;
   text-align: center;
-  transition: font-size 0.3s ease;
-}
-.especificaciones p {
-  line-height: 1.6;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   margin-bottom: 15px;
-  transition: font-size 0.3s ease;
+  background: linear-gradient(90deg, #ffcc00, #ff5500);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: transform 0.3s ease;
 }
+
+.especificaciones h2:hover {
+  transform: scale(1.05);
+}
+
+.especificaciones p {
+  font-size: 1.1em;
+  line-height: 1.7;
+  margin-bottom: 15px;
+  text-align: justify;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.especificaciones p:hover {
+  color: #ffcc00;
+  transform: translateX(5px);
+}
+
 .especificaciones img {
   max-width: 100%;
   height: auto;
   display: block;
   margin: 20px auto;
-  border-radius: 4px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(255, 193, 7, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.especificaciones img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(255, 193, 7, 0.5);
+}
+
 .especificaciones ul {
-  list-style-type: none;
+  list-style: none;
   padding: 0;
-  margin-bottom: 15px;
+  margin: 15px 0;
 }
+
 .especificaciones li {
-  margin-bottom: 8px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  margin-bottom: 10px;
+  transition: background 0.3s ease;
 }
+
+.especificaciones li:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
 .especificaciones li strong {
+  color: #ffcc00;
   font-weight: bold;
-  margin-right: 5px;
 }
 
 /* Estilos específicos para el segundo párrafo (Módulo 2) ****************************************************/
@@ -205,7 +255,7 @@ body {
   font-size: 1.6em;
 }
 .moto-4-estilo p {
-  color: black;
+  color: white;
 }
 .moto-4-estilo img {
   border-radius: 8px;
@@ -347,31 +397,58 @@ body {
 /* Botón de WhatsApp */
 .whatsapp-button {
   position: fixed;
-  bottom: 15px; /* Ajuste para que no quede tan pegado */
-  right: 15px; /* Ajuste para móviles */
+  bottom: 15px;
+  right: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 60px; /* Tamaño fijo para móviles */
-  height: 60px; /* Tamaño fijo para móviles */
-  z-index: 1000; /* Asegurar que esté por encima */
-  background-color: green;
+  width: 60px;
+  height: 60px;
+  z-index: 1000;
+  background-color: #25d366; /* Color de WhatsApp */
   border-radius: 50%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para mejor visibilidad */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  animation: pulse 2s infinite;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Icono dentro del botón */
 .whatsapp-button i {
-  font-size: 2rem; /* Ajuste de tamaño para icono */
+  font-size: 2rem;
   color: white;
+  transition: transform 0.3s ease;
+}
+
+/* Efecto de onda */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 0 20px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+/* Efecto hover para hacerlo más interactivo */
+.whatsapp-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.whatsapp-button:hover i {
+  transform: rotate(10deg);
 }
 
 /* Ajuste para pantallas más pequeñas */
 @media screen and (max-width: 480px) {
   .whatsapp-button {
-    width: 50px;
-    height: 50px;
-    bottom: 10px;
-    right: 10px;
+    width: 55px;
+    height: 55px;
+    bottom: 12px;
+    right: 12px;
   }
 
   .whatsapp-button i {
@@ -448,6 +525,9 @@ body {
 }
 
 /* Modulo 7 *****************************************************/
+
+/*... otros estilos... */
+
 .modulo7-container {
   display: flex;
   justify-content: space-around;
